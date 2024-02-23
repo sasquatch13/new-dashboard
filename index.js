@@ -52,6 +52,12 @@ document.getElementById("zen").addEventListener("click", function(){
     getBackround()
     })
 
+ document.getElementById("enter").addEventListener("click", function(){
+    let inputText = document.getElementById("input-text").value
+    console.log(inputText)
+    localStorage.setItem("theme", inputText)
+    getBackround()
+    })
 
 
     getBackround()
