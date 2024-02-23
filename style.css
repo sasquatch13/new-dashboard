@@ -77,8 +77,10 @@ button:hover{
 
 .dropdown {
     grid-column:  -1;
+    grid-row: 1 / -1;
     position: relative;
     display: inline-block;
+    
   }
 
   .dropdown-content {
@@ -89,3 +91,26 @@ button:hover{
   }
 
   .show {display: block;}
+
+.btn-in{
+    position: relative;
+}
+
+input{
+    height: 1.5em;
+    width: 7em;
+    background: rgba(255, 250, 250, .1);
+    border: 2px white solid;
+}
+
+#enter{ 
+    position: absolute; 
+    top: 0;  
+    right: 0px; 
+    z-index: 2; 
+    top: 2px;  
+    width: 4em;
+    height: 1.5em;
+    font-size: medium;
+    padding: 1px;
+} 
