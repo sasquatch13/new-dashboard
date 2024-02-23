@@ -3,7 +3,7 @@ if (localStorage.getItem("theme") == false) {
 }
 
 
-function getBackround() {
+function getBackground() {
     fetch(`https://apis.scrimba.com/unsplash/photos/random?orientation=landscape&query=${localStorage.getItem("theme")}`)
     .then(res => res.json())
     .then(data => {
@@ -29,37 +29,37 @@ document.getElementById("dropbtn").addEventListener("click", function(){
 
 document.getElementById("japan").addEventListener("click", function(){
     localStorage.setItem("theme", "japan")
-    getBackround()
+    getBackground()
     })
 
 document.getElementById("night").addEventListener("click", function(){
     localStorage.setItem("theme", "night")
-    getBackround()
+    getBackground()
     })
 
 document.getElementById("nature").addEventListener("click", function(){
     localStorage.setItem("theme", "nature")
-    getBackround()
+    getBackground()
     })    
 
 document.getElementById("space").addEventListener("click", function(){
     localStorage.setItem("theme", "space")
-    getBackround()
+    getBackground()
     })
 
 document.getElementById("zen").addEventListener("click", function(){
     localStorage.setItem("theme", "zen")
-    getBackround()
+    getBackground()
     })
 
  document.getElementById("enter").addEventListener("click", function(){
     let inputText = document.getElementById("input-text").value
     console.log(inputText)
     localStorage.setItem("theme", inputText)
-    getBackround()
+    getBackground()
     })
 
 
-    getBackround()
+    getBackground()
     setInterval(getCurrentTime, 1000)
 
